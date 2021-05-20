@@ -8,7 +8,7 @@ class ExecutionSuite < ActiveRecord::Base
 		:join_table => 'execution_suite_test_case'
 	)
 	belongs_to :project
-	attr_protected :id
+	# attr_protected :id
 
 	def self.get_root_for_project(project)
 		execution_suite = ExecutionSuite.find_by_project_id(project.id)

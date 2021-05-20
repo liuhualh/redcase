@@ -9,7 +9,7 @@ class TestCase < ActiveRecord::Base
 		:join_table => 'execution_suite_test_case'
 	)
 	has_many :execution_journals, :dependent => :destroy
-	attr_protected :id
+	# attr_protected :id
 
 	def copy_to(project)
 		new_issue = Issue.new

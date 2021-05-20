@@ -5,7 +5,7 @@ class TestSuite < ActiveRecord::Base
 	acts_as_tree :order => "name"
 	has_many :test_cases, :dependent => :destroy
 	belongs_to :project
-	attr_protected :id
+	# attr_protected :id
 
 	# Returns root test suite linked to the project and creates one and nested
 	# 'system' test suites (for 'obsolete' and 'unsorted' test cases) if they
