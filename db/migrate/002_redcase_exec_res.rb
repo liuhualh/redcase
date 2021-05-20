@@ -1,5 +1,5 @@
 
-class RedcaseExecRes < ActiveRecord::Migration
+class RedcaseExecRes < ActiveRecord::Migration[4.2]
 
   def self.up
     create_table :execution_results do |t|

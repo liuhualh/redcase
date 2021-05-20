@@ -1,5 +1,5 @@
 
-class RedcaseEnvironment < ActiveRecord::Migration
+class RedcaseEnvironment < ActiveRecord::Migration[4.2]
 
   def self.up
     create_table :execution_environments do |t|

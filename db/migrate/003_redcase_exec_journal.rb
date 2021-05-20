@@ -1,5 +1,5 @@
 
-class RedcaseExecJournal < ActiveRecord::Migration
+class RedcaseExecJournal < ActiveRecord::Migration[4.2]
 
   def self.up
     create_table :execution_journals do |t|

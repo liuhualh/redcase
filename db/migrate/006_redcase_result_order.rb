@@ -1,5 +1,5 @@
 
-class RedcaseResultOrder < ActiveRecord::Migration
+class RedcaseResultOrder < ActiveRecord::Migration[4.2]
 
   def self.up
     add_column :execution_results, :order, :integer, :unique => true
